@@ -8,8 +8,8 @@ namespace pryecto.Models
 {
     public class ModelContext : DbContext
     {
-        public DbSet<User> users { get; set; }
-        public DbSet<Song> songs { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Song> Songs { get; set; }
 
         public ModelContext() : base(@"Data Source=localhost\sqlexpress;Initial Catalog=proyecto;Integrated Security=True") { }
     }
