@@ -10,7 +10,7 @@ namespace pryecto.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Users");
         }
 
         public ActionResult About()

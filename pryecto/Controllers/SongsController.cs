@@ -93,9 +93,20 @@ namespace pryecto.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(song).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+
+                try
+                {
+                    song.User = db.Users.Single(p => p.Nif == song.PublisherId);
+                    db.Entry(song).State = EntityState.Modified;
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+
+
+                catch
+                {
+                    return RedirectToAction("ErrorId");
+                }
             }
             return View(song);
         }
