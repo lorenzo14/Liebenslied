@@ -26,6 +26,7 @@ namespace pryecto.Models
         public string Name { get; set; }
         public string Genre { get; set; }
         public int Duration { get; set; }
+        public string Lyrics { get; set; }
 
         //Relacion con Users
         public int PublisherId { get; set; }
