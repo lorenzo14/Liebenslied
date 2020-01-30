@@ -46,10 +46,12 @@ namespace pryecto.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Nif,Name,DischargeDate,Age")] User user)
+        public ActionResult Create([Bind(Include = "Nif,Name,Age")] User user)
         {
             if (ModelState.IsValid)
             {
+                //Añadimos la fecha de alta
+                user.DischargeDate = System.DateTime.Now;
                 db.Users.Add(user);
                 db.SaveChanges();
                 return RedirectToAction("Index");
