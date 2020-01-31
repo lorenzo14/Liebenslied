@@ -6,4 +6,9 @@
 
 dd {
     font-weight: bold;
+    background-color: red;
+}
+
+dt {
+    background-color: red;
 }
