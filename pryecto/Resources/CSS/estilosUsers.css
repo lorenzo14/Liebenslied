@@ -1,0 +1,45 @@
+﻿body {
+    background-image: url(../img/collage.jpg);
+    color: white;
+}
+
+table {
+    border: dashed white 2px;
+    background-color: sandybrown;
+}
+
+th {
+    border: solid 2px black;
+    color: saddlebrown;
+}
+
+td {
+    border: solid gray 1px;
+}
+
+td {
+    text-align: center;
+    background-color: black;
+}
+
+    td:hover {
+        background-color: darkgray;
+        color: black;
+    }
+
+a:visited {
+    color: forestgreen;
+}
+
+a:active {
+    color: red
+}
+
+a:link {
+    color: deepskyblue
+}
+
+
+dl {
+    background-color: red;
+}

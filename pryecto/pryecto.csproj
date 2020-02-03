@@ -152,8 +152,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Resources\CSS\estilosCrear.css" />
     <Content Include="Resources\CSS\estilosDetalle.css" />
     <Content Include="Resources\CSS\estilosSongs.css" />
+    <Content Include="Resources\CSS\estilosUsers.css" />
     <Content Include="Resources\img\fondoGuitarra.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

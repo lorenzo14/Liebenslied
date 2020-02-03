@@ -1,14 +1,44 @@
 ﻿#letra {
     text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
 
 dd {
-    font-weight: bold;
-    background-color: red;
+    background-color: lightgray;
+    width: 150px;
 }
 
 dt {
-    background-color: red;
+    background-color: darkred;
+    color: darkorange;
+    width: 28%;
+    font-weight:bold;
+}
+
+dl{
+    background-color: darkslategrey;
+    margin:auto;
+    width: 50%;
+}
+
+body {
+    background-image: url(../img/darkWood.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2{
+    color:ghostwhite;
+    text-align:center;
+}
+
+h3{
+    color:lavender;
+    text-align:center;
+}
+
+link:visited{
+    color:lavender;
 }

@@ -9,16 +9,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
-    <link rel="stylesheet" type="text/css" href="~/estilosDetalle.css" />
+    <title>Liebeslied</title>
+    <link rel="stylesheet" type="text/css" href="~/Resources/CSS/estilosDetalle.css" />
+    <link rel="icon" type="image/png" href="~/Resources/img/favicon.ico" />
 </head>
 <body>
     <div>
         <h4>User</h4>
-        <hr />
         <dl class="dl-horizontal">
             <dt>
-                @Html.DisplayNameFor(model => model.Name)
+                Nombre
             </dt>
     
             <dd>
@@ -26,7 +26,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.DischargeDate)
+                Fecha de alta
             </dt>
     
             <dd>
@@ -34,7 +34,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Age)
+                Edad
             </dt>
     
             <dd>
@@ -44,8 +44,8 @@
         </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.Nif }) |
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Nif }) |
+        @Html.ActionLink("Volver", "Index")
     </p>
 </body>
 </html>

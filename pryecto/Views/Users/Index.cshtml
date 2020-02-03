@@ -9,26 +9,23 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Liebeslied</title>
+    <link rel="stylesheet" type="text/css" href="~/Resources/CSS/estilosUsers.css" />
+    <link rel="icon" type="image/png" href="~/Resources/img/favicon.ico" />
 </head>
 <body>
     <p>
         @Html.ActionLink("Registrar Usuario", "Create")
+        <br/>
         @Html.ActionLink("Canciones", "Index", "Songs")
     </p>
     <table class="table" border="1">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nif)
+                ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Age)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DischargeDate)
+                Fecha de Alta
             </th>
             <th></th>
         </tr>
@@ -37,12 +34,6 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Nif)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Age)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DischargeDate)
